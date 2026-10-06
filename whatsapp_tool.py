@@ -12,7 +12,7 @@ def is_valid_country_code(phone_number):
     pattern = r"^\+\d{1,4}\d{10,12}$"  # Modified to allow 10 to 12 digits
     return re.match(pattern, phone_number) is not None
 while True:
-    user_input = input(Fore.CYAN + "Enter the phone number with country code (e.g. +20123456789): ")
+    user_input = input(Fore.CYAN + "Enter the phone number with country code (e.g. +933306476783): ")
     
     # Validate using the regular expression
     if is_valid_country_code(user_input):
